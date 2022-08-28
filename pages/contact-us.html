@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2 class="logo">
+          smart
+          <p>shop.</p>
+        </h2>
+
+        <ul class="nav-links">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../index.html">Shop</a>
+          </li>
+          <li>
+            <a href="about-us.html">About us</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="activated">Contact us</a>
+          </li>
+        </ul>
+        <span>
+          <img
+            src="../static/images/home-page-photos/user.svg"
+            alt="User icon"
+          />
+
+          <img
+            src="../static/images/home-page-photos/shopping-cart.svg"
+            alt="Shopping-cart icon"
+          />
+        </span>
+      </nav>
+
+      <div class="categores-search-button">
+        <span class="second-menu">
+          <ul>
+            <li>
+              <img
+                src="../static/images/home-page-photos/menu.png"
+                alt="burger menu icon"
+              />
+              <p>categories</p>
+            </li>
+
+            <li>
+              <div class="container">
+                <div class="form">
+                  <span>
+                    <img
+                      src="../static/images/home-page-photos/search icon.png"
+                      alt="search"
+                    />
+                  </span>
+                  <input type="text" placeholder="Search for the product" />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <h2 id="contact-us-title">Contact us</h2>
+      <div id="contact-holder">
+        <div id="contact-information">
+          <h4 id="contact-information-title">
+            Our friendly team would to hear from you!
+          </h4>
+
+          <form action="#">
+            <span id="name-last-name">
+              <div>
+                <label for="fname">First name</label>
+                <input
+                  class="information-input"
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Salome"
+                />
+              </div>
+              <div>
+                <label for="lname">Last name</label>
+                <input
+                  class="information-input"
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="Kveliashvili"
+                />
+              </div>
+            </span>
+
+            <label for="email">Email</label>
+            <input
+              class="information-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="info@smartshop.ge"
+            />
+            <label for="tel">Phone number</label>
+            <input
+              class="information-input"
+              type="telephone"
+              id="telephone"
+              name="telephone"
+              placeholder="+995 555 78 65 43"
+            />
+            <label for="tel">Message</label>
+            <input
+              class="information-input"
+              type="text"
+              id="message"
+              name="message"
+            />
+          </form>
+
+          <button id="send-message-button">Send message</button>
+        </div>
+
+        <iframe
+          id="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4405.550789808583!2d45.46794075386092!3d41.91874313599704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404432dbcdbe6c69%3A0xb09d864abcf428fe!2sBiblusi%20Gallery!5e0!3m2!1sen!2sge!4v1661631758761!5m2!1sen!2sge"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer-content-container">
+        <h2 class="footer-logo">smartshop.</h2>
+
+        <div id="footer-content">
+          <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Blog</li>
+          </ul>
+
+          <ul>
+            <li>Shop</li>
+            <li>Categories</li>
+          </ul>
+
+          <ul>
+            <li>Contact us</li>
+            <li>+995 678 465 993</li>
+            <li>info@smartshop.ge</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="container2">
+            <div class="form">
+              <input type="text" placeholder="Type your E-mail" />
+              <span>
+                <img
+                  src="../static/images/home-page-photos/Vector.svg"
+                  alt="send"
+                />
+              </span>
+            </div>
+          </div>
+          <span id="footer-text-under-mail-input">
+            Subscribe to our newsletter and never miss our news and promotions
+          </span>
+        </div>
+
+        <ul id="social-media-icons">
+          <li>
+            <img
+              src="../static/images/home-page-photos/Instagram.svg"
+              alt="Instagram icon"
+            />
+          </li>
+          <li>
+            <img
+              src="../static/images/home-page-photos/Linkedin.svg"
+              alt="Linkedin icon"
+            />
+          </li>
+          <li>
+            <img
+              src="../static/images/home-page-photos/Twitter.svg"
+              alt="Twitter icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

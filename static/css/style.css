@@ -1,0 +1,691 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* navigaton starts here */
+header{
+    min-height: 14vh;
+}
+
+header nav {
+    min-height: 14vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo{
+    display: inline-block;
+    width: 130px;
+    text-transform: uppercase;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    text-shadow: 2px 2px 4px gray;
+    cursor: pointer;
+}
+
+header nav .logo p{
+    display: inline-block;
+    color: #3F69FF;
+}
+
+header nav .nav-links{
+    display: flex;
+    justify-content: space-around;
+    min-width: 50%;
+    list-style: none;
+}
+
+header nav .nav-links li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #3D3D3D;
+}
+
+header nav .nav-links li .activated{
+    text-decoration-line: underline;
+    color: #0052CC;
+}
+
+header nav .nav-links li a:hover{
+    text-decoration-line: underline;
+    color: #0052CC;
+}
+
+header nav span img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer; 
+}
+/* navigation ends here */
+
+/* second blue menu starts here it contains burger button and a search bar */
+.categores-search-button{
+    height: 9vh;
+    width: 100%;
+    background-color: #0052CC;
+}
+
+.categores-search-button ul{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+.categores-search-button ul li{
+    width: 31%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+} 
+
+.categores-search-button ul li p{
+    margin: 0 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.second-menu{
+    height: 100%;
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+}
+/* econd blue menu ends here */
+
+/* search bar  and input starts here */
+.container {
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+  
+.form{
+    width: 100%;
+}
+
+.container .form {
+    display: flex;
+}
+  
+.container .form span {
+    border: 1px solid #000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    padding: 0.5rem 0 0.5rem 0.3rem;
+    display: grid;
+    place-items: center;
+    background-color: white;
+  }
+  
+.container .form span img {
+    width: 24px;
+    height: 24px;
+}
+  
+.container .form input {
+    border: 1px solid #000;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    padding: 0.5rem 1rem;
+    outline: none;
+    width: 100%;
+}
+
+::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+}
+/* search bar and input ends here */
+
+/* home page title starts here */
+#home-page-title{
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22.4306px;
+    line-height: 34px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*  home page title ends here */
+
+/* container with 4 phone cards starts here */
+#phones-container{
+    margin: 2vh 5% 15vh 5%;
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.phone-card{
+    width: 20%;
+    cursor: pointer;
+}
+
+.phone{
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(162, 162, 162, 0.25);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:local;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ #phone1{
+    background-image: url(../images/home-page-photos/image\ 2.png);
+    background-size: 26vh;
+} 
+
+#phone2{
+    background-image: url(../images/home-page-photos/image\ 4.png);
+    background-size: 25.3vh;
+}
+
+#phone3{
+    background-image: url(../images/home-page-photos/image\ 6.png);
+    background-size: 26.2vh;
+}
+
+#phone4{
+    background-image: url(../images/home-page-photos/image\ 8.png);
+    background-size: 24.6vh;
+}
+
+
+
+.phone :hover{
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+
+.phone img{
+    height: 52vh;
+}
+
+.phone-model-and-price{
+    margin-top: 1vh;
+    width: 100%;
+    height: 5vh ;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #0052CC;
+}
+
+.model{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.price{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #373737;
+    width: fit-content;
+}
+
+#red-price{
+    color: #BD6161;
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: 13px;
+    display: inline-block;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    padding-right: 10px;
+    text-transform: capitalize;
+}
+
+.product-added-and-see-more{
+    width: 100%;
+    height: 5vh ;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-added{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #6A6A6A;
+}
+
+.see-more{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #000000;
+} 
+/* container with 4 phone cards ends here */
+
+footer{
+    background-color: #0052CC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 35vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-content-container{
+    width: 90%;
+    height: 70%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    display:inline-block;
+    width: 130px;
+    height: fit-content;
+    text-transform: uppercase;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    font-size: 24px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+#footer-content{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+#footer-content ul li{
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer; 
+}
+
+#footer-content ul li:not(:first-child) {
+    margin: 15px 0;
+}
+
+#footer-content ul li:first-child{
+    margin-top: 7px;
+}
+
+.container2 {
+    height: 7vh;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+
+}
+  
+.form{
+    width: 100%;
+}
+
+.container2 .form {
+    display: flex;
+}
+  
+.container2 .form span {
+    border: 1px solid #000;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    padding: 0.5rem 0 0.5rem 0.3rem;
+    display: grid;
+    place-items: center;
+    background-color: white;
+}
+  
+.container2 .form span img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+  
+.container2 .form input {
+    border: 1px solid #000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    padding: 0.5rem 1rem;
+    outline: none;
+    width: 100%;
+}
+
+#footer-text-under-mail-input{
+    display: inline-block;
+    width: 250px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.4583px;
+    line-height: 20px;
+    text-transform: capitalize;
+    padding-top: 5vh;
+}
+
+#social-media-icons{
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    justify-self: left;
+    cursor: pointer; 
+}
+
+#social-media-icons li{
+    list-style: none;
+    margin: 0px 15px 0px 0px;
+    width: 24px;
+    height: 24px;
+}
+
+#social-media-icons li img{
+    width: 24px;
+    height: 24px;
+}
+
+/* about us page starts here */
+.about-us-page-title{
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22.4306px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3F69FF;
+}
+
+#text-under-who-we-are{
+    display: flex;
+    justify-content: space-between;
+    width: 76%;
+    margin: 0 12% 7vh 12%;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+}
+
+#text-under-who-we-are section{
+    width: 66%;
+}
+
+#text-under-why-do-costumers-love-us{
+    margin: 0 12% 10vh 12%;
+    display: flex;
+    width: 76%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+#icons-holder-under-our-core-values{
+    display: flex;
+    justify-content: center;
+}
+
+#icons-holder-under-our-core-values ul{
+    width: 70%;
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#icons-holder-under-our-core-values ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    height: 17vh;
+    width: 150px;
+    cursor: pointer; 
+}
+
+#icons-holder-under-our-core-values ul li img{
+    height: 10vh;
+}
+/* about us page ends here */
+
+/* blog page starts here */
+#blog-page-title{
+    margin: 5vh 7% 5vh 7%;
+    width: 86%;
+    text-align: start;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+}
+
+#blog-page-article{
+    width: 86%;
+    margin: 0 7% 0 7%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+#text-about-apple{
+    text-align: start;
+    width: 48%;
+}
+
+#text-about-apple h2{
+    width: 90%;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+#text-about-apple p{
+    margin: 30px 0;
+    width: 80%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+/* 4 card holder starts here */
+#blog-page-card-container{
+    width: 86%;
+    margin: 11vh 7% 0 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-page-card{
+    width: 22%;
+    font-style: normal;
+    cursor: pointer; 
+}
+
+.blog-page-card h3{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    margin: 0px 0px 10px 0px;
+}
+
+.blog-page-card h6{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.blog-page-card span img{
+    width: 100%;
+}
+
+/* contact us page starts here */
+#contact-us-title{
+    width: 86%;
+    margin: 5vh 6% 0px 6%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+#contact-holder{
+    width: 86%;
+    height: 78vh;
+    margin: 1vh 6% 0 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-information{
+    display: inline-block;
+    width: 48%;
+    height: 85vh;
+}
+
+#contact-information-title{
+    margin: 0 0 4vh 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.72);
+}
+
+#name-last-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+#name-last-name div{
+    width: 46%;
+}
+
+.information-input{
+    width: 100%;
+    height: 6vh;
+    border: 1px solid #7E7E7E;
+    border-radius: 6px;
+    margin: 2vh 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 15px;
+}
+
+.information-input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 10px;
+}
+
+label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;    
+    color: rgba(0, 0, 0, 0.72);   
+}
+
+#message{
+    height: 17vh;
+}
+
+#send-message-button{
+    width: 40%;
+    height: 7vh;
+    background: #3F69FF;
+    border-radius: 6px; 
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: white;
+    margin: 2vh 30% 0 30%;
+    cursor: pointer;
+}
+
+#map{
+    width:50%;
+    height:70vh;
+    border: 0;
+    display: inline-block;
+    border-radius: 6px;
+}
+/* contact us page ends here */
